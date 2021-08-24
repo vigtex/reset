@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Módulo 01 - Aula 06</title>
+</head>
+<body>
+<h1><b>
+IMC
+<br>
+Módulo 01 - Aula 06
+</b></h1>
+<script>
+	let peso = parseFloat(prompt("Digite seu peso em Kg"));
+	let altura = parseFloat(prompt("Digite sua altura em metros"));
+	let imc = peso / (altura*altura);
+	console.log ("Seu IMC é: "+ imc);
+	if (imc < 18.5)
+	{	
+	console.log ("Seu IMC é: " + imc + ". Classificação: Magreza.");
+	}
+	else if (imc <= 24.99) 
+	{	
+	console.log ("Seu IMC é: " + imc + ". Classificação: Normal.");
+	}
+	else if (imc <= 29.99)
+	{	
+	console.log ("Seu IMC é: " + imc + ". Classificação: Sobrepeso.");
+	}
+	else if (imc <= 39.99)
+	{	
+	console.log ("Seu IMC é: " + imc + ". Classificação: Obesidade.");
+	} 			
+	else
+	{ 
+	console.log ("Seu IMC é: " + imc + ". Classificação: Obesidade grave.");
+	}	
+
+	if (imc >= 29.99) 
+	{
+	console.log ("Cuidado! Você está acima do peso recomendado pela OMS.");	
+	}
+
+	if (imc >= 40.00) 
+	{
+	console.log ("É importante procurar um médico para avaliar sua saúde.");	
+	}	
+</script>
+</body>
+</html>
